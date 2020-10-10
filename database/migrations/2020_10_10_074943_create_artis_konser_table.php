@@ -15,9 +15,9 @@ class CreateArtisKonserTable extends Migration
     {
         Schema::create('artis_konser', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_eo');
-            $table->unsignedBigInteger('id_konser_eo');
-            $table->unsignedBigInteger('id_artis');
+            $table->unsignedBigInteger('id_eo')->nullable();
+            $table->unsignedBigInteger('id_konser_eo')->nullable();
+            $table->unsignedBigInteger('id_artis')->nullable();
             $table->timestamps();
 
             $table->foreign('id_eo')->references('id')->on('eo')->onDelete('cascade');

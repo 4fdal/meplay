@@ -16,13 +16,13 @@ class CreateKonserEoTable extends Migration
         Schema::create('konser_eo', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_eo');
-            $table->integer('jum_tiket');
-            $table->string('foto');
-            $table->string('judul');
-            $table->datetime('waktu');
-            $table->text('desk');
-            $table->string('faq');
-            $table->text('link_leve_konser');
+            $table->integer('jum_tiket')->nullable();
+            $table->string('foto')->nullable();
+            $table->string('judul')->nullable();
+            $table->datetime('waktu')->nullable();
+            $table->text('desk')->nullable();
+            $table->string('faq')->nullable();
+            $table->text('link_leve_konser')->nullable();
             $table->timestamps();
 
             $table->foreign('id_eo')->references('id')->on('eo')->onDelete('cascade');

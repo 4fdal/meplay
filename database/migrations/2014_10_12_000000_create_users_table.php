@@ -17,9 +17,10 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('no_hp')->unique();
             $table->string('email')->unique();
-            $table->string('api_token')->unique();
-            $table->unsignedBigInteger('id_level')->unique();
-            $table->boolean('verifikasi_akun')->unique();
+            $table->string('api_token')->unique()->nullable();
+            $table->unsignedBigInteger('id_level');
+            $table->boolean('verifikasi_akun')->unique()->nullable();
+            $table->boolean('verifikasi_token')->unique()->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

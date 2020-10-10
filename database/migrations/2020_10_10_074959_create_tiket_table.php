@@ -16,12 +16,12 @@ class CreateTiketTable extends Migration
         Schema::create('tiket', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_konser_eo');
-            $table->string('nama');
-            $table->integer('level');
-            $table->double('harga');
-            $table->integer('status_replay');
-            $table->datetime('exp_replay');
-            $table->text('desk');
+            $table->string('nama')->nullable();
+            $table->integer('level')->nullable();
+            $table->double('harga')->nullable();
+            $table->integer('status_replay')->nullable();
+            $table->datetime('exp_replay')->nullable();
+            $table->text('desk')->nullable();
             $table->timestamps();
 
             $table->foreign('id_konser_eo')->references('id')->on('konser_eo')->onDelete('cascade');

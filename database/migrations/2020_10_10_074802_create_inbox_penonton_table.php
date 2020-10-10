@@ -16,8 +16,8 @@ class CreateInboxPenontonTable extends Migration
         Schema::create('inbox_penonton', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_penonton');
-            $table->string('judul');
-            $table->text('desk');
+            $table->string('judul')->nullable();
+            $table->text('desk')->nullable();
             $table->timestamps();
         });
     }

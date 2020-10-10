@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Models\SaveDataText;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\SaveDataText;
 use Illuminate\Support\Facades\Validator;
 
 class DataController extends Controller{

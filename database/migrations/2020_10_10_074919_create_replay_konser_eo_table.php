@@ -16,7 +16,7 @@ class CreateReplayKonserEoTable extends Migration
         Schema::create('replay_konser_eo', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_konser_eo');
-            $table->text('link_replay_konser');
+            $table->text('link_replay_konser')->nullable();
             $table->timestamps();
 
             $table->foreign('id_konser_eo')->references('id')->on('konser_eo')->onDelete('cascade');

@@ -15,8 +15,8 @@ class CreateLevelTable extends Migration
     {
         Schema::create('level', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->string('desc');
+            $table->string('nama')->nullable();
+            $table->string('desk')->nullable();
             $table->timestamps();
         });
     }

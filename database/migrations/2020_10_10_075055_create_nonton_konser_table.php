@@ -15,9 +15,9 @@ class CreateNontonKonserTable extends Migration
     {
         Schema::create('nonton_konser', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_penonton');
-            $table->unsignedBigInteger('id_tiket_dibeli');
-            $table->unsignedBigInteger('id_konser_eo');
+            $table->unsignedBigInteger('id_penonton')->nullable();
+            $table->unsignedBigInteger('id_tiket_dibeli')->nullable();
+            $table->unsignedBigInteger('id_konser_eo')->nullable();
             $table->timestamps();
 
             $table->foreign('id_penonton')->references('id')->on('penonton')->onDelete('cascade');

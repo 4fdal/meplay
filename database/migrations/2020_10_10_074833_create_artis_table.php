@@ -16,10 +16,10 @@ class CreateArtisTable extends Migration
         Schema::create('artis', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_user');
-            $table->string('foto');
-            $table->string('foto_ktp');
-            $table->string('nama');
-            $table->string('alamat');
+            $table->string('foto')->nullable();
+            $table->string('foto_ktp')->nullable();
+            $table->string('nama')->nullable();
+            $table->string('alamat')->nullable();
             $table->timestamps();
 
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
