@@ -111,5 +111,7 @@ composer.json
 }
 
 
+run dengan cmd
+------------------
 heroku run echo "web: vendor/bin/heroku-php-apache2 public/" > Procfile --app me-play
 heroku run  php artisan db:wipe --app me-play && heroku run  php artisan migrate --seed --path=database/migrations --app me-play

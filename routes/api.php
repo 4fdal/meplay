@@ -17,3 +17,28 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::group(['prefix' => 'v1'], function () {
+    
+});
+
+
+Route::group(['prefix' => 'document'], function () {
+    Route::post('/', 'DocumentController@postDocument')->name('post.document');
+    Route::get('/{keyDocument}', 'DocumentController@getDocument')->name('get.document');
+});
+
+Route::group(['prefix' => 'data'], function () {
+    Route::post('/', 'DataController@postData')->name('post.data');
+    Route::get('/{keyData}', 'DataController@getData')->name('get.data');
+});
+
+Route::post('/data', [
+    'uses' => 'DataController@postData',
+    'as' => 'post.data'
+]);
+
+Route::get('/data/{keyData}', [
+    'uses' => 'DataController@getData',
+    'as' => 'get.data'
+]);
