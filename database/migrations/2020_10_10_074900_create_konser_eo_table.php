@@ -21,7 +21,6 @@ class CreateKonserEoTable extends Migration
             $table->string('judul')->nullable();
             $table->datetime('waktu')->nullable();
             $table->text('desk')->nullable();
-            $table->string('faq')->nullable();
             $table->text('link_leve_konser')->nullable();
             $table->timestamps();
 

@@ -16,7 +16,6 @@ class KonserEO extends Model
         'judul',
         'waktu',
         'desk',
-        'faq',
         'link_leve_konser',
     ];
 

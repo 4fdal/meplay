@@ -24,7 +24,7 @@ class CreateSaveDataDocumentTable extends Migration
 
         });
         
-        DB::statement("ALTER TABLE save_data_document MODIFY COLUMN value LONGBLOB");
+        // DB::statement("ALTER TABLE public.save_data_document MODIFY COLUMN value LONGBLOB");
     }
 
     /**
