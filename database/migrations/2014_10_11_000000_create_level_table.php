@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+use App\Models\Level;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 class CreateLevelTable extends Migration
 {
@@ -19,6 +20,12 @@ class CreateLevelTable extends Migration
             $table->string('desk')->nullable();
             $table->timestamps();
         });
+
+        Level::insert([
+            ['id' => 1, 'nama' => 'eo', 'desk' => 'eo', 'created_at' => date('Y-m-d H:i:s'), 'updated_at' => date('Y-m-d H:i:s')],
+            ['id' => 2, 'nama' => 'artis', 'desk' => 'artis', 'created_at' => date('Y-m-d H:i:s'), 'updated_at' => date('Y-m-d H:i:s')],
+            ['id' => 3, 'nama' => 'penonton', 'desk' => 'penonton', 'created_at' => date('Y-m-d H:i:s'), 'updated_at' => date('Y-m-d H:i:s')],
+        ]);
     }
 
     /**

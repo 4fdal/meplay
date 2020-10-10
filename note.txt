@@ -115,3 +115,23 @@ run dengan cmd
 ------------------
 heroku run echo "web: vendor/bin/heroku-php-apache2 public/" > Procfile --app me-play
 heroku run  php artisan db:wipe --app me-play && heroku run  php artisan migrate --seed --path=database/migrations --app me-play
+
+#####################################
+NOTE
+#####################################
+
+konser
+-------
+gendre
+
+artis_konser
+------
+id_konser
+id_artis
+
+cari
+-----
+response => [
+    konser : [ ... list konser ], 
+    artis : [ ... list artis ] => to detail artis
+]

@@ -19,7 +19,8 @@ class CreateKonserEoTable extends Migration
             $table->integer('jum_tiket')->nullable();
             $table->string('foto')->nullable();
             $table->string('judul')->nullable();
-            $table->datetime('waktu')->nullable();
+            $table->datetime('waktu_mulai')->nullable();
+            $table->datetime('waktu_selesai')->nullable();
             $table->text('desk')->nullable();
             $table->text('link_leve_konser')->nullable();
             $table->timestamps();

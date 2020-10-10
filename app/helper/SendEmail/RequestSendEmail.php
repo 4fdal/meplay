@@ -2,8 +2,9 @@
 
 namespace App\helper\SendEmail;
 
-class RequestSendMail
-{
+use GuzzleHttp\Client;
+
+class RequestSendEmail {
 
     private $url ;
     private $dataMail;
@@ -11,9 +12,9 @@ class RequestSendMail
     public function __construct($dataMail)
     {
         $this->dataMail = (object) $dataMail;
-        $this->dataMail->key = "edsendmail";
+        $this->dataMail->key = env('API_MAIL_KEY', 'edsendmail');
         $this->dataMail->from = env('API_MAIL_FROM', 'edyamishiro@gmail.com');
-        $this->url = env('API_MAIL_URL', 'https://app-compact.000webhostapp.com/api/mail/') ;
+        $this->url = env('API_MAIL_URL', 'https://furgetech.com/web/api/mail/') ;
     }
 
     public function mail($view, $data = null)
@@ -45,12 +46,12 @@ class RequestSendMail
             'title' => $data['title'],
         ];
 
-        $sMail = new RequestSendMail($dataMain);
+        $sMail = new RequestSendEmail($dataMain);
         try {
             $sMail->mail($view, $data);
             return true;
         } catch (\Throwable $th) {
-            return false;
+            return dd($th);
         }
         
     }
