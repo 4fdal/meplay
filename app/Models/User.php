@@ -24,6 +24,7 @@ class User extends Authenticatable
         'id_level',
         'verifikasi_akun',
         'verifikasi_token',
+        'remember_token'
     ];
 
     /**

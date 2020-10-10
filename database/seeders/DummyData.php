@@ -20,11 +20,6 @@ class DummyData extends Seeder
      */
     public function run()
     {
-        Level::insert([
-            ['id' => 1, 'nama' => 'eo', 'desk' => 'eo', 'created_at' => date('Y-m-d H:i:s'), 'updated_at' => date('Y-m-d H:i:s') ],
-            ['id' => 2, 'nama' => 'artis', 'desk' => 'artis', 'created_at' => date('Y-m-d H:i:s'), 'updated_at' => date('Y-m-d H:i:s') ],
-            ['id' => 3, 'nama' => 'penonton', 'desk' => 'penonton', 'created_at' => date('Y-m-d H:i:s'), 'updated_at' => date('Y-m-d H:i:s') ],
-        ]);
 
         $fotoKTP = "https://awsimages.detik.net.id/community/media/visual/2017/07/20/3a1c67e8-064d-4f56-80eb-feced76cad3e_169.jpg?w=700&q=90"  ;
         $foto = "http://wartabahari.com/wp-content/uploads/2017/10/IMG_20171019_125049-768x576.jpg" ;
