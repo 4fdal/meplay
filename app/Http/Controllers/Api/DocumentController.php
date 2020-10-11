@@ -23,11 +23,12 @@ class DocumentController extends Controller{
         ]);
         if($valid->fails()) return response([ 'msgCode' => -1, 'err' => $valid->errors()]);
 
-        SaveDataDocument::setItem($request->nama, $request->file('document'));
+        $link = SaveDataDocument::setItem($request->nama, $request->file('document'));
 
         return response([
             'msgCode' => 1,
-            'msg' => ['berhasil menyimpan data']
+            'msg' => ['berhasil menyimpan data'],
+            'data' => $link,
         ]);
     }
 }

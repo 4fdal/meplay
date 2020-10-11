@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\URL;
 
 class SaveDataDocument extends Model {
 
@@ -24,12 +23,13 @@ class SaveDataDocument extends Model {
         $originalName = $fileRequest->getClientOriginalName();
         $mimeType = $fileRequest->getClientMimeType();
         $valueDocument = file_get_contents($fileRequest);
-        return SaveDataDocument::updateOrCreate([
+        $setItem = SaveDataDocument::updateOrCreate([
             'key' => $key,
             'original_name' => $originalName,
             'mime_type' => $mimeType,
             'value' => $valueDocument,
         ]);
+        return SaveDataDocument::getDocument($key);
     }
     
     public static function getItem($key){
