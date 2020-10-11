@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Me Play</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="{{url('asset-user')}}/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/icon" href="{{url('asset-user')}}/images/icon.png"/>
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -62,7 +62,7 @@
 
                         <div class="mu-header-featured-content">
                             <h1>Welcome To <span>Me Play</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi, consectetur odit voluptate labore veniam, neque iure cumque aut recusandae iusto. Aliquid quos vel optio dolore consequuntur accusantium autem quaerat!</p>
+                            <p class="text-justify">Me Play adalah layanan yang menyediakan berbagai informasi menganai konser secara online, sehingga dengan kondisi pandemi saat sekarang ini kamu dapat menikmati konser seperti biasanya, serta kamu juga dapat menonton acara konser yg telah berlalu juga dan kamu gak perlu lagi ribet antri beli tiket, bingung mau kemana dan bosen ngelakuin hal yang itu - itu aja, bisa cek di Me Play!</p>
 
                             <div class="mu-app-download-area">
                                 <h4>Download The App</h4>
@@ -90,7 +90,7 @@
             <a class="mu-menu-close-btn" href="#"><span class="mu-line"></span></a>
             <nav class="mu-menu" role="navigation">
                 <ul>
-                    <li><a href="#mu-header">Header</a></li>
+                    <li><a href="#mu-header">Home</a></li>
                     <li><a href="#mu-feature">App Feature</a></li>
                     <li><a href="#mu-video">Promo Video</a></li>
                     <li><a href="#mu-apps-screenshot">Apps Screenshot</a></li>
@@ -119,7 +119,7 @@
                             <div class="mu-title-area">
                                 <h2 class="mu-title">OUR APP FEATURES</h2>
                                 <span class="mu-title-dot"></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p>
+                                <p>Me Play Aplikasi Nonton Konser Online No.1 Di Indonesia.</p>
                             </div>
 
                             <!-- Start Feature Content -->
@@ -141,8 +141,8 @@
                                                     </button>
                                                 </div>
                                                 <div class="media-body">
-                                                    <h3 class="media-heading">Responsive Design</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at, omnis neque illum accusamus delectus consectetur perspiciatis fugiat ex veniam sit soluta iste, reprehenderit laboriosam!</p>
+                                                    <h3 class="media-heading">Booking Tiket And Conectifity With VR Mode</h3>
+                                                    <p>Sistem Booking Tiket online dan sistem gift tiket serta fitur layanan utnuk koneksi ke VR</p>
                                                 </div>
                                             </div>
                                             <!-- End single feature item -->
@@ -155,8 +155,8 @@
                                                     </button>
                                                 </div>
                                                 <div class="media-body">
-                                                    <h3 class="media-heading">Easy To Customize</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis provident in voluptatum nihil suscipit molestias, excepturi blanditiis corrupti error tenetur ab, voluptates architecto nemo.</p>
+                                                    <h3 class="media-heading">Watch Live Concert And Replay Concert</h3>
+                                                    <p>Nikmati layanan menonton live konser di aplikasi Me Live serta kami juga menyediakan layanan Replay Konser Bagi anda yg tidak bisa mengikuti acara live konsernya.</p>
                                                 </div>
                                             </div>
                                             <!-- End single feature item -->
@@ -169,8 +169,8 @@
                                                     </button>
                                                 </div>
                                                 <div class="media-body">
-                                                    <h3 class="media-heading">Excellent Performance</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam eius, ullam nisi repellendus deserunt distinctio, eveniet libero velit quo voluptatem sequi, ipsa asperiores ad? Facilis molestiae cum aliquam.</p>
+                                                    <h3 class="media-heading">Buy Marchendise Concert</h3>
+                                                    <p>Me Play juga menyediakan media penjualan marchendise concert sehingga ketika masayarak ingin mendapatkanya bisa melakukan pembelian melalui Me Play.</p>
                                                 </div>
                                             </div>
                                             <!-- End single feature item -->
@@ -183,8 +183,8 @@
                                                     </button>
                                                 </div>
                                                 <div class="media-body">
-                                                    <h3 class="media-heading">GPS Tracking</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque repudiandae eveniet facere natus recusandae, sapiente iste veritatis molestiae. Recusandae veniam officia asperiores reprehenderit earum.</p>
+                                                    <h3 class="media-heading">Meet And Great With Artist</h3>
+                                                    <p>Me Play juga menyediakan layanan konser yang diadakan oleh artis-artis idolamu sehingga apabila kamu tertarik dan mengikutinya kamu akan mendapatkan notifikasi terkait informasi artist tersebut.</p>
                                                 </div>
                                             </div>
                                             <!-- End single feature item -->
@@ -239,7 +239,7 @@
                             <div class="mu-title-area">
                                 <h2 class="mu-title">APPS SCREENSHOT</h2>
                                 <span class="mu-title-dot"></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p>
+                                <p>List Screenshoot Aplikasi Me Play.</p>
                             </div>
 
 
@@ -374,7 +374,7 @@
                             <div class="mu-title-area">
                                 <h2 class="mu-title">GET THE APP</h2>
                                 <span class="mu-title-dot"></span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p>
+                                <p>Buruan bagi kamu yang ingin menikmati konser secara online silahkan download aplikasi Me Play yang terseia di beberapa platform berikut ini.</p>
                             </div>
 
 
@@ -413,13 +413,13 @@
                                       <div class="panel-heading">
                                         <h4 class="panel-title">
                                           <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
-                                            <span class="fa fa-minus"></span> What is Apex App? 
+                                            <span class="fa fa-minus"></span> Apa itu Me Play 
                                           </a>
                                         </h4>
                                       </div>
                                       <div id="collapseOne" class="panel-collapse collapse in">
                                         <div class="panel-body">
-                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                          Me Play adalah layanan yang menyediakan berbagai informasi menganai konser secara online, sehingga dengan kondisi pandemi saat sekarang ini kamu dapat menikmati konser seperti biasanya, serta kamu juga dapat menonton acara konser yg telah berlalu juga dan kamu gak perlu lagi ribet antri beli tiket, bingung mau kemana dan bosen ngelakuin hal yang itu - itu aja, bisa cek di Me Play!
                                         </div>
                                       </div>
                                     </div>
@@ -428,13 +428,19 @@
                                       <div class="panel-heading">
                                         <h4 class="panel-title">
                                           <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                            <span class="fa fa-plus"></span> How do I setup this App? 
+                                            <span class="fa fa-plus"></span> Apa Saja Fitur-Fitur Unggulan Me Play 
                                           </a>
                                         </h4>
                                       </div>
                                       <div id="collapseTwo" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                          - Informasi Konser Terbaru dan Terpopuler
+                                          - Booking Tiket
+                                          - Integrasi dengan VR Mode
+                                          - Sistem Replay Konser
+                                          - Jual / Beli Marchendise Konser
+                                          - Layanan Meet And Great Artist
+                                          - Layanan Follow Akun Artist
                                         </div>
                                       </div>
                                     </div>
@@ -443,13 +449,13 @@
                                       <div class="panel-heading">
                                         <h4 class="panel-title">
                                           <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                            <span class="fa fa-plus"></span> Does it cost anything to become a member? 
+                                            <span class="fa fa-plus"></span> Berapa Jumlah Tiket Yang Bisa Dibeli Di Me Play? 
                                           </a>
                                         </h4>
                                       </div>
                                       <div id="collapseThree" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                          Untuk sistem Booking Tiket Me Play dapat membeli tiket sebanyak apapun sehingga setalah tiket terbeli Me Play juga menyediakan sistem gift tiket sehingga tiket bisa diberikan kepada user lainnya.
                                         </div>
                                       </div>
                                     </div>
@@ -458,13 +464,13 @@
                                       <div class="panel-heading">
                                         <h4 class="panel-title">
                                           <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                            <span class="fa fa-plus"></span> What is your policy regarding privacy? 
+                                            <span class="fa fa-plus"></span> Apakah Me Play bisa diintegrasikan dengan media streaming lainnya? 
                                           </a>
                                         </h4>
                                       </div>
                                       <div id="collapseFour" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                          Me Play dapat diintegrasikan dengan media streaming lainnya seperti Zoom, Google Meet, maupun Youtube Namun untuk sistem VIP kami lebih menyarankan menggunakan sistem Streaming yang telah disediakan oleh Me Play.
                                         </div>
                                       </div>
                                     </div>
@@ -473,13 +479,13 @@
                                       <div class="panel-heading">
                                         <h4 class="panel-title">
                                           <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                                            <span class="fa fa-plus"></span> Are there more help resources available? 
+                                            <span class="fa fa-plus"></span> Apabila Kita Lupa Menonton Konser Apakah Tiket Dapat Di Rechedule atau Di Refund? 
                                           </a>
                                         </h4>
                                       </div>
                                       <div id="collapseFive" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                          Untuk kasus ini Me Play tidak menyediakan hal demikian namun apabila kamu ingin menonton konser tersebut Me Play menyediakan layanan menonton Replay Konser Sehingga Kamu juga bisa melihat konser tersebut dikemudian harinya.
                                         </div>
                                       </div>
                                     </div>
@@ -506,7 +512,7 @@
                             <div class="mu-title-area">
                                 <h2 class="mu-heading-title">GET IN TOUCH</h2>
                                 <span class="mu-title-dot"></span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                                <p>Apabila ada Kritik dan Saran Anda Bisa memberitahukannya melalui Form Berikut ini.</p>
                             </div>
 
                             
@@ -538,21 +544,21 @@
                                             <div class="mu-contact-right-single">
                                                 <div class="mu-icon"><i class="fa fa-map-marker"></i></div>
                                                 <p><strong>Office Location</strong></p>
-                                                <p>Dooley Branch Rd Millen, GA 30442, USA</p>
+                                                <p>Jln.Pasar Baru, Kel. Cupak Tangah, Kec. Pauh, Kota Padang, Sumbar</p>
                                             </div>
 
                                             <div class="mu-contact-right-single">
                                                 <div class="mu-icon"><i class="fa fa-phone"></i></div>
                                                 <p><strong>Phone Number</strong></p>
-                                                <p>+90 987 678 9834</p>
-                                                <p>+90 567 098 785</p>
+                                                <p>+628 1280 2355 85</p>
+                                                <p>+628 5765 5301 35</p>
                                             </div>
 
                                             <div class="mu-contact-right-single">
                                                 <div class="mu-icon"><i class="fa fa-envelope"></i></div>
                                                 <p><strong>Email Address</strong></p>
-                                                <p>contact@domain.com</p>
-                                                <p>support@domain.com</p>
+                                                <p>contact@meplay.com</p>
+                                                <p>support@meplay.com</p>
                                             </div>
 
                                             <div class="mu-contact-right-single">
