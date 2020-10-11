@@ -15,6 +15,7 @@ class CreateTiketDibeliTable extends Migration
     {
         Schema::create('tiket_dibeli', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_tiket');
             $table->unsignedBigInteger('id_penonton');
             $table->unsignedBigInteger('id_konser_eo');
             $table->integer('jum_replay')->nullable();
@@ -25,6 +26,7 @@ class CreateTiketDibeliTable extends Migration
             $table->integer('status_penggunaan')->nullable();
             $table->timestamps();
 
+            $table->foreign('id_tiket')->references('id')->on('tiket')->onDelete('cascade');
             $table->foreign('id_penonton')->references('id')->on('penonton')->onDelete('cascade');
             $table->foreign('id_konser_eo')->references('id')->on('konser_eo')->onDelete('cascade');
         });

@@ -20,7 +20,19 @@ class KonserEO extends Model
         'link_live_konser',
     ];
 
-     public function eo(){
+    public function eo(){
         return $this->belongsTo(EO::class, 'id_eo') ;
+    }
+
+    public function tiket(){
+        return $this->hasMany(Tiket::class, 'id_konser_eo') ;
+    }
+
+    public function artisKonser(){
+        return $this->hasMany(ArtisKonser::class, 'id_konser_eo') ;
+    }
+
+    public function konserMerchandise(){
+        return $this->hasMany(KonserMerchandise::class, 'id_konser_eo');
     }
 }

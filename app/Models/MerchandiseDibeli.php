@@ -8,6 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class MerchandiseDibeli extends Model
 {
     use HasFactory;
+
+    public static  $DIBELI_STAT_TUNGGU_PEMBAYARAN = 1;
+    public static  $DIBELI_STAT_SEDANG_VERIFIKASI = 2;
+    public static  $DIBELI_STAT_SELESAI = 3;
+
+    public static  $STAT_BELUM_DIKIRIM = 0;
+    public static  $STAT_TELAH_DIKIRIM = 1;
+
     protected $table = 'merchandise_dibeli';
     protected $fillable = [
         'id_konser_marchandise',
