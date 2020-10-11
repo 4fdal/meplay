@@ -249,43 +249,107 @@
                                 <div class="mu-apps-screenshot-slider">
 
                                     <div class="mu-single-screeshot">
-                                        <img src="{{url('asset-user')}}/images/screenshot/01.jpg" alt="App screenshot img">
+                                        <img src="{{url('asset-user')}}/images/screenshot/01.png" alt="App screenshot img">
                                     </div>
 
                                     <div class="mu-single-screeshot">
-                                        <img src="{{url('asset-user')}}/images/screenshot/02.jpg" alt="App screenshot img">
+                                        <img src="{{url('asset-user')}}/images/screenshot/02.png" alt="App screenshot img">
                                     </div>
 
                                     <div class="mu-single-screeshot">
-                                        <img src="{{url('asset-user')}}/images/screenshot/03.jpg" alt="App screenshot img">
+                                        <img src="{{url('asset-user')}}/images/screenshot/03.png" alt="App screenshot img">
                                     </div>
 
                                     <div class="mu-single-screeshot">
-                                        <img src="{{url('asset-user')}}/images/screenshot/04.jpg" alt="App screenshot img">
+                                        <img src="{{url('asset-user')}}/images/screenshot/04.png" alt="App screenshot img">
                                     </div>
 
                                     <div class="mu-single-screeshot">
-                                        <img src="{{url('asset-user')}}/images/screenshot/05.jpg" alt="App screenshot img">
+                                        <img src="{{url('asset-user')}}/images/screenshot/05.png" alt="App screenshot img">
                                     </div>
 
                                     <div class="mu-single-screeshot">
-                                        <img src="{{url('asset-user')}}/images/screenshot/01.jpg" alt="App screenshot img">
+                                        <img src="{{url('asset-user')}}/images/screenshot/06.png" alt="App screenshot img">
                                     </div>
 
                                     <div class="mu-single-screeshot">
-                                        <img src="{{url('asset-user')}}/images/screenshot/02.jpg" alt="App screenshot img">
+                                        <img src="{{url('asset-user')}}/images/screenshot/07.png" alt="App screenshot img">
                                     </div>
 
                                     <div class="mu-single-screeshot">
-                                        <img src="{{url('asset-user')}}/images/screenshot/03.jpg" alt="App screenshot img">
+                                        <img src="{{url('asset-user')}}/images/screenshot/08.png" alt="App screenshot img">
                                     </div>
 
                                     <div class="mu-single-screeshot">
-                                        <img src="{{url('asset-user')}}/images/screenshot/04.jpg" alt="App screenshot img">
+                                        <img src="{{url('asset-user')}}/images/screenshot/09.png" alt="App screenshot img">
                                     </div>
 
                                     <div class="mu-single-screeshot">
-                                        <img src="{{url('asset-user')}}/images/screenshot/05.jpg" alt="App screenshot img">
+                                        <img src="{{url('asset-user')}}/images/screenshot/10.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/11.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/12.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/13.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/14.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/15.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/16.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/17.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/18.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/19.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/20.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/21.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/22.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/23.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/24.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/25.png" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/26.png" alt="App screenshot img">
                                     </div>
 
                                 </div>
