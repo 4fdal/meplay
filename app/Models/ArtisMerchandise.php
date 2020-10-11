@@ -5,21 +5,20 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Artis extends Model
+class ArtisMerchandise extends Model
 {
     use HasFactory;
-    protected $table = 'artis';
+    protected $table = 'artis_merchandise';
     protected $fillable = [
-        'id_user',
+        'id_artis',
         'foto',
-        'foto_ktp',
         'nama',
-        'alamat',
-        'desk'
+        'harga',
+        'desk',
     ];
 
-    public function user(){
-        return $this->belongsTo(Level::class, 'id_user') ;
+    public function artis(){
+        return $this->belongsTo(Artis::class, 'id_artis');
     }
-
 }
+

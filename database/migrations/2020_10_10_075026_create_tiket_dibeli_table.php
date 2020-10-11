@@ -17,9 +17,12 @@ class CreateTiketDibeliTable extends Migration
             $table->id();
             $table->unsignedBigInteger('id_penonton');
             $table->unsignedBigInteger('id_konser_eo');
-            $table->double('jum_pembayaran')->nullable();
+            $table->integer('jum_replay')->nullable();
+            $table->datetime('waktu_dibeli')->nullable();
+            $table->datetime('exp_waktu_replay')->nullable();
+            $table->double('total_harga')->nullable();
+            $table->integer('status_dibeli')->nullable();
             $table->integer('status_penggunaan')->nullable();
-            $table->datetime('exp_pembatalan')->nullable();
             $table->timestamps();
 
             $table->foreign('id_penonton')->references('id')->on('penonton')->onDelete('cascade');

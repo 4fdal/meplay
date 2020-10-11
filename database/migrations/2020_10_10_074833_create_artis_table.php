@@ -20,6 +20,7 @@ class CreateArtisTable extends Migration
             $table->string('foto_ktp')->nullable();
             $table->string('nama')->nullable();
             $table->string('alamat')->nullable();
+            $table->string('desk')->nullable();
             $table->timestamps();
 
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');

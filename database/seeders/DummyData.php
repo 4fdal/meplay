@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Artis;
+use App\Models\ArtisKonser;
 use App\Models\EO;
 use App\Models\KonserEO;
 use App\Models\Level;
@@ -243,7 +244,22 @@ class DummyData extends Seeder
             if($key >= 0 && $key <= 10) {
                 $user = User::create([
                     'no_hp' => $value->no_hp,
-                    'email' => strtolower($value->email).'@gmail.com',
+                    'email' => strtolower($value->email) . '@gmail.com',
+                    'id_level' => 2,
+                    'password' => Hash::make(123456)
+                ]);
+                $artis = Artis::create([
+                    'id_user' => $user->id,
+                    'foto' => $foto,
+                    'foto_ktp' => $fotoKTP,
+                    'nama' => $value->email,
+                    'alamat' => $value->alamat,
+                    'desk' => 'when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+                ]);
+            } else if($key >= 11 && $key <= 20) {
+                $user = User::create([
+                    'no_hp' => $value->no_hp,
+                    'email' => strtolower($value->email) . '@gmail.com',
                     'id_level' => 1,
                     'password' => Hash::make(123456)
                 ]);
@@ -363,30 +379,18 @@ class DummyData extends Seeder
                         'id_eo' => $eo->id,
                         'jum_tiket' => $valKonser->jum_tiket,
                         'foto' => $fotoKonser,
-                        'judul' => 'konser'. $value->email.' '.$valKonser->judul,
+                        'judul' => 'konser' . $value->email . ' ' . $valKonser->judul,
                         'waktu' => date('Y-m-d', strtotime($valKonser->waktu)),
-                        'desk' => 'des' . $value->email .' '.$valKonser->desk,
+                        'desk' => 'des' . $value->email . ' ' . $valKonser->desk,
                     ]);
-                    // foreach (json_decode('
-                        
-                    // ') as $keyTiket => $valTiket) {
-                        
-                    // }
+                    for ($i=0; $i < rand(5,7); $i++) { 
+                        $artisKonser = ArtisKonser::create([
+                            'id_io' => $eo->id,
+                            'id_konser_eo' => $konserEO->id,
+                            'id_artis' => rand(1, 10),
+                        ]);
+                    }
                 }
-            } else if($key >= 11 && $key <= 20) {
-                $user = User::create([
-                    'no_hp' => $value->no_hp,
-                    'email' => strtolower($value->email).'@gmail.com',
-                    'id_level' => 2,
-                    'password' => Hash::make(123456)
-                ]);
-                $artis = Artis::create([
-                    'id_user' => $user->id,
-                    'foto' => $foto,
-                    'foto_ktp' => $fotoKTP,
-                    'nama' => $value->email,
-                    'alamat' => $value->alamat,
-                ]);
             } else {
                 $user = User::create([
                     'no_hp' => $value->no_hp,

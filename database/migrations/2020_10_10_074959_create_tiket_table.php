@@ -17,10 +17,10 @@ class CreateTiketTable extends Migration
             $table->id();
             $table->unsignedBigInteger('id_konser_eo');
             $table->string('nama')->nullable();
-            $table->integer('level')->nullable();
+            $table->integer('jumlah_tiket')->nullable();
+            $table->dateTime('exp_waktu_pembelian')->nullable();
             $table->double('harga')->nullable();
-            $table->integer('status_replay')->nullable();
-            $table->datetime('exp_replay')->nullable();
+            $table->double('harga_replay')->nullable();
             $table->text('desk')->nullable();
             $table->timestamps();
 

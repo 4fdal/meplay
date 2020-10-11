@@ -132,6 +132,65 @@ id_artis
 cari
 -----
 response => [
-    konser : [ ... list konser ], 
+    konser : [ ... list konser ], => berdasarkan nama
     artis : [ ... list artis ] => to detail artis
 ]
+
+konser_merchandise
+------------------
+id_konser_io
+foto
+nama
+harga
+desk
+
+merchandise_dibeli
+----------------------
+id_konser_merchandise
+id_penonton
+jum
+total_harga
+status_dibeli [menunggu_pembayaran=>sedang_verifikasi=>selesai]
+status_pengiriman
+
+artis_merchandise
+------------------
+id_artis
+foto
+nama
+harga
+desk
+
+merchandise_artis_dibeli
+----------------------
+id_artis_merchandise
+id_penonton
+jum
+total_harga
+status_dibeli [menunggu_pembayaran=>sedang_verifikasi=>selesai]
+status_pengiriman
+
+tiket
+--------------
+id_konser_eo
+nama
+jumlah_tiket
+exp_waktu_pembelian
+harga
+harga_replay
+desk
+
+tiket_dibeli
+---------------
+id_konser_eo
+id_penonton
+jum_replay [1 replay = 1 hari]
+waktu_dibeli
+exp_waktu_replay 
+total_harga [harga + harga_replay + jum_replay]
+status_dibeli [menunggu_pembayaran=>sedang_verifikasi=>selesai]
+status_penggunaan
+
+// kalau lebih dari satu untuk memberikan ke orang lai update id_penonton berdasarkan no_hp
+
+

@@ -12,9 +12,12 @@ class TiketDibeli extends Model
     protected $fillable = [
         'id_penonton',
         'id_konser_eo',
-        'jum_pembayaran',
+        'jum_replay',
+        'waktu_dibeli',
+        'exp_waktu_replay',
+        'total_harga',
+        'status_dibeli',
         'status_penggunaan',
-        'exp_pembatalan',
     ];
     public function penonton(){
         return $this->belongsTo(Penonton::class, 'id_penonton') ;

@@ -5,20 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Tiket extends Model
+class KonserMerchandise extends Model
 {
     use HasFactory;
-    protected $table = 'tiket';
+    protected $table = 'konser_merchandise';
     protected $fillable = [
         'id_konser_eo',
+        'foto',
         'nama',
-        'jumlah_tiket',
-        'exp_waktu_pembelian',
         'harga',
-        'harga_replay',
         'desk',
     ];
-    public function konserEO(){
-        return $this->belongsTo(KonserEO::class, 'id_konser_eo') ;
+    public function konserEO()
+    {
+        return $this->belongsTo(KonserEO::class, 'id_konser_eo');
     }
 }

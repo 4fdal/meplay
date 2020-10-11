@@ -18,7 +18,6 @@ class CreatePenontonTable extends Migration
             $table->unsignedBigInteger('id_user');
             $table->string('nama')->nullable();
             $table->string('alamat')->nullable();
-            $table->string('uang')->nullable();
             $table->timestamps();
 
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');

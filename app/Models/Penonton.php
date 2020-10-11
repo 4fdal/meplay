@@ -13,7 +13,6 @@ class Penonton extends Model
         'id_user',
         'nama',
         'alamat',
-        'uang',
     ];
     public function user(){
         return $this->belongsTo(User::class, 'id_user') ;
