@@ -1,637 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Me Play</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Unica University Template">
-    <meta name="keywords" content="event, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon -->   
-    <link href="{{url('asset-user')}}/img/icon.png" rel="shortcut icon"/>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="{{url('asset-user')}}/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="{{url('asset-user')}}/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="{{url('asset-user')}}/css/themify-icons.css"/>
-    <link rel="stylesheet" href="{{url('asset-user')}}/css/magnific-popup.css"/>
-    <link rel="stylesheet" href="{{url('asset-user')}}/css/animate.css"/>
-    <link rel="stylesheet" href="{{url('asset-user')}}/css/owl.carousel.css"/>
-    <link rel="stylesheet" href="{{url('asset-user')}}/css/style.css"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="{{url('asset-user')}}/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="{{url('asset-user')}}/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="{{url('asset-user')}}/css/slick.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="{{url('asset-user')}}/css/theme-color/default-theme.css" rel="stylesheet">
 
 
+    <!-- Main Style -->
+    <link href="{{url('asset-user')}}/style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body and title font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+ 
+ 
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+  </head>
+  <body>
 
-</head>
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+  
+    
+    <!-- Start Header -->
+    <header id="mu-header" class="" role="banner">
+        <div class="mu-header-overlay">
+            <div class="container">
+                <div class="mu-header-area">
 
-    <!-- header section -->
-    <header class="header-section">
-        <div class="container">
-            <!-- logo -->
-            <a href="/" class="site-logo"><img src="{{url('asset-user')}}/img/logo.png" alt=""></a>
-            <div class="nav-switch">
-                <i class="fa fa-bars"></i>
-            </div>
-            <div class="header-info">
-                <div class="hf-item">
-                    <i class="fa fa-clock-o"></i>
-                    <p><span>Working time:</span>Monday - Friday: 08 AM - 06 PM</p>
-                </div>
-                <div class="hf-item">
-                    <i class="fa fa-map-marker"></i>
-                    <p><span>Find us:</span>40 Baria Street 133/2, New York City, US</p>
+                    <!-- Start Logo -->
+                    <div class="mu-logo-area">
+                        <!-- text based logo -->
+                        <a class="mu-logo" href="#">Me Play</a>
+                        <!-- image based logo -->
+                        <!-- <a class="mu-logo" href="#"><img src="{{url('asset-user')}}/images/logo.png" alt="logo img"></a> -->
+                    </div>
+                    <!-- End Logo -->
+
+                    <!-- Start header featured area -->
+                    <div class="mu-header-featured-area">
+                        <div class="mu-header-featured-img">
+                            <img src="{{url('asset-user')}}/images/iphone.png" alt="iphone image">
+                        </div>
+
+                        <div class="mu-header-featured-content">
+                            <h1>Welcome To <span>Me Play</span></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi, consectetur odit voluptate labore veniam, neque iure cumque aut recusandae iusto. Aliquid quos vel optio dolore consequuntur accusantium autem quaerat!</p>
+
+                            <div class="mu-app-download-area">
+                                <h4>Download The App</h4>
+                                <a class="mu-apple-btn" href="#"><i class="fa fa-apple"></i><span>apple store</span></a>
+                                <a class="mu-google-btn" href="#"><i class="fa fa-android"></i><span>google play</span></a>
+                                <!-- <a class="mu-windows-btn" href="#"><i class="fa fa-windows"></i><span>windows store</span></a> -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End header featured area -->
+
                 </div>
             </div>
         </div>
     </header>
-    <!-- header section end-->
+    <!-- End Header -->
 
-
-    <!-- Header section  -->
-    <nav class="nav-section">
-        <div class="container">
-            <div class="nav-right">
-                <a href=""><i class="fa fa-search" data-toggle="tooltip" data-placement="top" title="Pencarian"></i></a>
-                <a href=""><i class="fa fa-shopping-cart" data-toggle="tooltip" data-placement="top" title="Chart"></i></a>
-                <a href=""><i class="fa fa-user" data-toggle="tooltip" data-placement="top" title="Login/Register"></i></a>
-            </div>
-            <ul class="main-menu">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="#">Event</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Promo</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Header section end -->
-
-
-    <!-- Hero section -->
-    <section class="hero-section">
-        <div class="hero-slider owl-carousel">
-            <div class="hs-item set-bg" data-setbg="{{url('asset-user')}}/img/hero-slider/1.jpg">
-                <div class="hs-text">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="hs-subtitle">Award Winning UNIVERSITY</div>
-                                <h2 class="hs-title">An investment in knowledge pays the best interest.</h2>
-                                <p class="hs-des">Education is not just about going to school and getting a degree. It's about widening your<br> knowledge and absorbing the truth about life. Knowledge is power.</p>
-                                <div class="site-btn">GET STARTED</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hs-item set-bg" data-setbg="{{url('asset-user')}}/img/hero-slider/2.jpg">
-                <div class="hs-text">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <div class="hs-subtitle">Award Winning UNIVERSITY</div>
-                                <h2 class="hs-title">An investment in knowledge pays the best interest.</h2>
-                                <p class="hs-des">Education is not just about going to school and getting a degree. It's about widening your<br> knowledge and absorbing the truth about life. Knowledge is power.</p>
-                                <div class="site-btn">GET STARTED</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero section end -->
-
-
-    <!-- Counter section  -->
-    <section class="counter-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-6">
-                    <div class="big-icon">
-                        <i class="fa fa-graduation-cap"></i>
-                    </div>
-                    <div class="counter-content">
-                        <h2>NEXT COUSRE: Sales & Marketing Alignment</h2>
-                        <p><i class="fa fa-calendar-o"></i>07:00 PM - 09:00 PM</p>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="counter">
-                        <div class="counter-item"><h4>20</h4>Days</div>
-                        <div class="counter-item"><h4>08</h4>Hrs</div>
-                        <div class="counter-item"><h4>40</h4>Mins</div>
-                        <div class="counter-item"><h4>56</h4>secs</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counter section end -->
-
-
-    <!-- Services section -->
-    <section class="service-section spad">
-        <div class="container services">
-            <div class="section-title text-center">
-                <h3>OUR SERVICES</h3>
-                <p>We provides the opportunity to prepare for life</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 service-item">
-                    <div class="service-icon">
-                        <img src="{{url('asset-user')}}/img/services-icons/1.png" alt="1">
-                    </div>
-                    <div class="service-content">
-                        <h4>Art Studio</h4>
-                        <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 service-item">
-                    <div class="service-icon">
-                        <img src="{{url('asset-user')}}/img/services-icons/2.png" alt="1">
-                    </div>
-                    <div class="service-content">
-                        <h4>Great Facility</h4>
-                        <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 service-item">
-                    <div class="service-icon">
-                        <img src="{{url('asset-user')}}/img/services-icons/3.png" alt="1">
-                    </div>
-                    <div class="service-content">
-                        <h4>Activity Hub</h4>
-                        <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 service-item">
-                    <div class="service-icon">
-                        <img src="{{url('asset-user')}}/img/services-icons/4.png" alt="1">
-                    </div>
-                    <div class="service-content">
-                        <h4>Fully Qualified</h4>
-                        <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 service-item">
-                    <div class="service-icon">
-                        <img src="{{url('asset-user')}}/img/services-icons/5.png" alt="1">
-                    </div>
-                    <div class="service-content">
-                        <h4>Flexible Schedule</h4>
-                        <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 service-item">
-                    <div class="service-icon">
-                        <img src="{{url('asset-user')}}/img/services-icons/6.png" alt="1">
-                    </div>
-                    <div class="service-content">
-                        <h4>Chemistry Lab</h4>
-                        <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services section end -->
-
-    
-    <!-- Enroll section -->
-    <section class="enroll-section spad set-bg" data-setbg="{{url('asset-user')}}/img/enroll-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="section-title text-white">
-                        <h3>ENROLLMENT</h3>
-                        <p>Get started with us to explore the exciting</p>
-                    </div>
-                    <div class="enroll-list text-white">
-                        <div class="enroll-list-item">
-                            <span>1</span>
-                            <h5>Contact</h5>
-                            <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue.</p>
-                        </div>
-                        <div class="enroll-list-item">
-                            <span>2</span>
-                            <h5>Consulting</h5>
-                            <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue.</p>
-                        </div>
-                        <div class="enroll-list-item">
-                            <span>3</span>
-                            <h5>Register</h5>
-                            <p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 offset-lg-1 p-lg-0 p-4">
-                    <img src="{{url('asset-user')}}/img/encroll-img.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Enroll section end -->
-
-
-    <!-- Courses section -->
-    <section class="courses-section spad">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3>OUR COURSES</h3>
-                <p>Building a better world, one course at a time</p>
-            </div>
-            <div class="row">
-                <!-- course item -->
-                <div class="col-lg-4 col-md-6 course-item">
-                    <div class="course-thumb">
-                        <img src="{{url('asset-user')}}/img/course/1.jpg" alt="">
-                        <div class="course-cat">
-                            <span>BUSINESS</span>
-                        </div>
-                    </div>
-                    <div class="course-info">
-                        <div class="date"><i class="fa fa-clock-o"></i> 22 Mar 2018</div>
-                        <h4>Certificate Course in Writing<br>for a Global Market</h4>
-                        <h4 class="cource-price">$100<span>/month</span></h4>
-                    </div>
-                </div>
-                <!-- course item -->
-                <div class="col-lg-4 col-md-6 course-item">
-                    <div class="course-thumb">
-                        <img src="{{url('asset-user')}}/img/course/2.jpg" alt="">
-                        <div class="course-cat">
-                            <span>Marketing</span>
-                        </div>
-                    </div>
-                    <div class="course-info">
-                        <div class="date"><i class="fa fa-clock-o"></i> 22 Mar 2018</div>
-                        <h4>Google AdWords: Get More<br> Customers with Search Marketing </h4>
-                        <h4 class="cource-price">$150<span>/month</span></h4>
-                    </div>
-                </div>
-                <!-- course item -->
-                <div class="col-lg-4 col-md-6 course-item">
-                    <div class="course-thumb">
-                        <img src="{{url('asset-user')}}/img/course/3.jpg" alt="">
-                        <div class="course-cat">
-                            <span>DESIGN</span>
-                        </div>
-                    </div>
-                    <div class="course-info">
-                        <div class="date"><i class="fa fa-clock-o"></i> 22 Mar 2018</div>
-                        <h4>The Ultimate Drawing Course<br> Beginner to Advanced</h4>
-                        <h4 class="cource-price">$180<span>/month</span></h4>
-                    </div>
-                </div>
-                <!-- course item -->
-                <div class="col-lg-4 col-md-6 course-item">
-                    <div class="course-thumb">
-                        <img src="{{url('asset-user')}}/img/course/4.jpg" alt="">
-                        <div class="course-cat">
-                            <span>DATABASE</span>
-                        </div>
-                    </div>
-                    <div class="course-info">
-                        <div class="date"><i class="fa fa-clock-o"></i> 22 Mar 2018</div>
-                        <h4>Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</h4>
-                        <h4 class="cource-price">$150<span>/month</span></h4>
-                    </div>
-                </div>
-                <!-- course item -->
-                <div class="col-lg-4 col-md-6 course-item">
-                    <div class="course-thumb">
-                        <img src="{{url('asset-user')}}/img/course/5.jpg" alt="">
-                        <div class="course-cat">
-                            <span>PROGRAM</span>
-                        </div>
-                    </div>
-                    <div class="course-info">
-                        <div class="date"><i class="fa fa-clock-o"></i> 22 Mar 2018</div>
-                        <h4>Web Developer Bootcamp<br>Make web  applications</h4>
-                        <h4 class="cource-price">$250<span>/month</span></h4>
-                    </div>
-                </div>
-                <!-- course item -->
-                <div class="col-lg-4 col-md-6 course-item">
-                    <div class="course-thumb">
-                        <img src="{{url('asset-user')}}/img/course/6.jpg" alt="">
-                        <div class="course-cat">
-                            <span>BUSINESS</span>
-                        </div>
-                    </div>
-                    <div class="course-info">
-                        <div class="date"><i class="fa fa-clock-o"></i> 22 Mar 2018</div>
-                        <h4>How to Start an Amazon<br>FBA Store on a Tight Budget</h4>
-                        <h4 class="cource-price">$150<span>/month</span></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Courses section end-->
-
-
-    <!-- Fact section -->
-    <section class="fact-section spad set-bg" data-setbg="{{url('asset-user')}}/img/fact-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-3 fact">
-                    <div class="fact-icon">
-                        <i class="ti-crown"></i>
-                    </div>
-                    <div class="fact-text">
-                        <h2>50</h2>
-                        <p>YEARS</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 fact">
-                    <div class="fact-icon">
-                        <i class="ti-briefcase"></i>
-                    </div>
-                    <div class="fact-text">
-                        <h2>80</h2>
-                        <p>TEACHERS</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 fact">
-                    <div class="fact-icon">
-                        <i class="ti-user"></i>
-                    </div>
-                    <div class="fact-text">
-                        <h2>500</h2>
-                        <p>STUDENTS</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3 fact">
-                    <div class="fact-icon">
-                        <i class="ti-pencil-alt"></i>
-                    </div>
-                    <div class="fact-text">
-                        <h2>800+</h2>
-                        <p>LESSONS</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Fact section end-->
-
-
-    <!-- Event section -->
-    <section class="event-section spad">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3>OUR EVENTS</h3>
-                <p>Our department  initiated a series of events</p>
-            </div>
-            <div class="row">
-                <div class="col-md-6 event-item">
-                    <div class="event-thumb">
-                        <img src="{{url('asset-user')}}/img/event/1.jpg" alt="">
-                        <div class="event-date">
-                            <span>24 Mar 2018</span>
-                        </div>
-                    </div>
-                    <div class="event-info">
-                        <h4>The dos and don'ts of writing a personal<br>statement for languages</h4>
-                        <p><i class="fa fa-calendar-o"></i> 08:00 AM - 10:00 AM <i class="fa fa-map-marker"></i> Center Building, Block A</p>
-                        <a href="" class="event-readmore">REGISTER <i class="fa fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 event-item">
-                    <div class="event-thumb">
-                        <img src="{{url('asset-user')}}/img/event/2.jpg" alt="">
-                        <div class="event-date">
-                            <span>22 Mar 2018</span>
-                        </div>
-                    </div>
-                    <div class="event-info">
-                        <h4>University interview tips:<br>confidence won't make up for flannel</h4>
-                        <p><i class="fa fa-calendar-o"></i> 08:00 AM - 10:00 AM <i class="fa fa-map-marker"></i> Center Building, Block A</p>
-                        <a href="" class="event-readmore">REGISTER <i class="fa fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Event section end -->
-
-
-    <!-- Gallery section -->
-    <div class="gallery-section">
-        <div class="gallery">
-            <div class="grid-sizer"></div>
-            <div class="gallery-item gi-big set-bg" data-setbg="{{url('asset-user')}}/img/gallery/1.jpg">
-                <a class="img-popup" href="{{url('asset-user')}}/img/gallery/1.jpg"><i class="ti-plus"></i></a>
-            </div>
-            <div class="gallery-item set-bg" data-setbg="{{url('asset-user')}}/img/gallery/2.jpg">
-                <a class="img-popup" href="{{url('asset-user')}}/img/gallery/2.jpg"><i class="ti-plus"></i></a>
-            </div>
-            <div class="gallery-item set-bg" data-setbg="{{url('asset-user')}}/img/gallery/3.jpg">
-                <a class="img-popup" href="{{url('asset-user')}}/img/gallery/3.jpg"><i class="ti-plus"></i></a>
-            </div>
-            <div class="gallery-item gi-long set-bg" data-setbg="{{url('asset-user')}}/img/gallery/5.jpg">
-                <a class="img-popup" href="{{url('asset-user')}}/img/gallery/5.jpg"><i class="ti-plus"></i></a>
-            </div>
-            <div class="gallery-item gi-big set-bg" data-setbg="{{url('asset-user')}}/img/gallery/8.jpg">
-                <a class="img-popup" href="{{url('asset-user')}}/img/gallery/8.jpg"><i class="ti-plus"></i></a>
-            </div>
-            <div class="gallery-item gi-long set-bg" data-setbg="{{url('asset-user')}}/img/gallery/4.jpg">
-                <a class="img-popup" href="{{url('asset-user')}}/img/gallery/4.jpg"><i class="ti-plus"></i></a>
-            </div>
-            <div class="gallery-item set-bg" data-setbg="{{url('asset-user')}}/img/gallery/6.jpg">
-                <a class="img-popup" href="{{url('asset-user')}}/img/gallery/6.jpg"><i class="ti-plus"></i></a>
-            </div>
-            <div class="gallery-item set-bg" data-setbg="{{url('asset-user')}}/img/gallery/7.jpg">
-                <a class="img-popup" href="{{url('asset-user')}}/img/gallery/7.jpg"><i class="ti-plus"></i></a>
-            </div>
+    <!-- Start Menu -->
+    <button class="mu-menu-btn">
+        <i class="fa fa-bars"></i>
+    </button>
+    <div class="mu-menu-full-overlay">
+        <div class="mu-menu-full-overlay-inner">
+            <a class="mu-menu-close-btn" href="#"><span class="mu-line"></span></a>
+            <nav class="mu-menu" role="navigation">
+                <ul>
+                    <li><a href="#mu-header">Header</a></li>
+                    <li><a href="#mu-feature">App Feature</a></li>
+                    <li><a href="#mu-video">Promo Video</a></li>
+                    <li><a href="#mu-apps-screenshot">Apps Screenshot</a></li>
+                    <li><a href="#mu-download">Download</a></li>
+                    <li><a href="#mu-faq">FAQ</a></li>
+                    <li><a href="#mu-contact">Get In Touch</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
-    <!-- Gallery section -->
+    <!-- End Menu -->
 
-
-    <!-- Blog section -->
-    <section class="blog-section spad">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3>LATEST NEWS</h3>
-                <p>Get latest breaking news & top stories today</p>
-            </div>
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="blog-item">
-                        <div class="blog-thumb set-bg" data-setbg="{{url('asset-user')}}/img/blog/1.jpg"></div>
-                        <div class="blog-content">
-                            <h4>Parents who try to be their children’s best friends</h4>
-                            <div class="blog-meta">
-                                <span><i class="fa fa-calendar-o"></i> 24 Mar 2018</span>
-                                <span><i class="fa fa-user"></i> Owen Wilson</span>
-                            </div>
-                            <p>Integer luctus diam ac scerisque consectetur. Vimus dot euismod neganeco lacus sit amet. Aenean interdus mid vitae sed accumsan...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="blog-item">
-                        <div class="blog-thumb set-bg" data-setbg="{{url('asset-user')}}/img/blog/2.jpg"></div>
-                        <div class="blog-content">
-                            <h4>Graduations could be delayed as external examiners</h4>
-                            <div class="blog-meta">
-                                <span><i class="fa fa-calendar-o"></i> 23 Mar 2018</span>
-                                <span><i class="fa fa-user"></i> Owen Wilson</span>
-                            </div>
-                            <p>Integer luctus diam ac scerisque consectetur. Vimus dot euismod neganeco lacus sit amet. Aenean interdus mid vitae sed accumsan...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="blog-item">
-                        <div class="blog-thumb set-bg" data-setbg="{{url('asset-user')}}/img/blog/3.jpg"></div>
-                        <div class="blog-content">
-                            <h4>Private schools adopt a Ucas style application system</h4>
-                            <div class="blog-meta">
-                                <span><i class="fa fa-calendar-o"></i> 24 Mar 2018</span>
-                                <span><i class="fa fa-user"></i> Owen Wilson</span>
-                            </div>
-                            <p>Integer luctus diam ac scerisque consectetur. Vimus dot euismod neganeco lacus sit amet. Aenean interdus mid vitae sed accumsan...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="blog-item">
-                        <div class="blog-thumb set-bg" data-setbg="{{url('asset-user')}}/img/blog/4.jpg"></div>
-                        <div class="blog-content">
-                            <h4>Cambridge digs in at the top of university league table</h4>
-                            <div class="blog-meta">
-                                <span><i class="fa fa-calendar-o"></i> 23 Mar 2018</span>
-                                <span><i class="fa fa-user"></i> Owen Wilson</span>
-                            </div>
-                            <p>Integer luctus diam ac scerisque consectetur. Vimus dot euismod neganeco lacus sit amet. Aenean interdus mid vitae sed accumsan...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Blog section -->
-
-
-    <!-- Newsletter section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-lg-7">
-                    <div class="section-title mb-md-0">
-                    <h3>NEWSLETTER</h3>
-                    <p>Subscribe and get the latest news and useful tips, advice and best offer.</p>
-                </div>
-                </div>
-                <div class="col-md-7 col-lg-5">
-                    <form class="newsletter">
-                        <input type="text" placeholder="Enter your email">
-                        <button class="site-btn">SUBSCRIBE</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Newsletter section end --> 
-
-
-    <!-- Footer section -->
-    <footer class="footer-section">
-        <div class="container footer-top">
-            <div class="row">
-                <!-- widget -->
-                <div class="col-sm-6 col-lg-3 footer-widget">
-                    <div class="about-widget">
-                        <img src="{{url('asset-user')}}/img/logo-light.png" alt="">
-                        <p>orem ipsum dolor sit amet, consecter adipiscing elite. Donec minos varius, viverra justo ut, aliquet nisl.</p>
-                        <div class="social pt-1">
-                            <a href=""><i class="fa fa-twitter-square"></i></a>
-                            <a href=""><i class="fa fa-facebook-square"></i></a>
-                            <a href=""><i class="fa fa-google-plus-square"></i></a>
-                            <a href=""><i class="fa fa-linkedin-square"></i></a>
-                            <a href=""><i class="fa fa-rss-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- widget -->
-                <div class="col-sm-6 col-lg-3 footer-widget">
-                    <h6 class="fw-title">USEFUL LINK</h6>
-                    <div class="dobule-link">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About us</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Events</a></li>
-                            <li><a href="">Features</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">Policy</a></li>
-                            <li><a href="">Term</a></li>
-                            <li><a href="">Help</a></li>
-                            <li><a href="">FAQs</a></li>
-                            <li><a href="">Site map</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- widget -->
-                <div class="col-sm-6 col-lg-3 footer-widget">
-                    <h6 class="fw-title">RECENT POST</h6>
-                    <ul class="recent-post">
-                        <li>
-                            <p>Snackable study:How to break <br> up your master's degree</p>
-                            <span><i class="fa fa-clock-o"></i>24 Mar 2018</span>
-                        </li>
-                        <li>
-                            <p>Open University plans major <br> cuts to number of staff</p>
-                            <span><i class="fa fa-clock-o"></i>24 Mar 2018</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- widget -->
-                <div class="col-sm-6 col-lg-3 footer-widget">
-                    <h6 class="fw-title">CONTACT</h6>
-                    <ul class="contact">
-                        <li><p><i class="fa fa-map-marker"></i> 40 Baria Street 133/2, NewYork City,US</p></li>
-                        <li><p><i class="fa fa-phone"></i> (+88) 111 555 666</p></li>
-                        <li><p><i class="fa fa-envelope"></i> infodeercreative@gmail.com</p></li>
-                        <li><p><i class="fa fa-clock-o"></i> Monday - Friday, 08:00AM - 06:00 PM</p></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- copyright -->
-        <div class="copyright">
-            <div class="container">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>      
-        </div>
-    </footer>
-    <!-- Footer section end-->
-
-
-
-    <!--====== Javascripts & Jquery ======-->
-    <script src="{{url('asset-user')}}/js/jquery-3.2.1.min.js"></script>
-    <script src="{{url('asset-user')}}/js/owl.carousel.min.js"></script>
-    <script src="{{url('asset-user')}}/js/jquery.countdown.js"></script>
-    <script src="{{url('asset-user')}}/js/masonry.pkgd.min.js"></script>
-    <script src="{{url('asset-user')}}/js/magnific-popup.min.js"></script>
-    <script src="{{url('asset-user')}}/js/main.js"></script>
     
-</body>
+    
+    <!-- Start main content -->
+        
+    <main role="main">
+
+        <!-- Start Feature -->
+        <section id="mu-feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-feature-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">OUR APP FEATURES</h2>
+                                <span class="mu-title-dot"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p>
+                            </div>
+
+                            <!-- Start Feature Content -->
+                            <div class="mu-feature-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mu-feature-content-left">
+                                            <img class="mu-profile-img" src="{{url('asset-user')}}/images/iphone-group.png" alt="iphone Image">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mu-feature-content-right">
+
+                                            <!-- Start single feature item -->
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <button class="btn mu-feature-btn" type="button">
+                                                        <i class="fa fa-tablet" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h3 class="media-heading">Responsive Design</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic at, omnis neque illum accusamus delectus consectetur perspiciatis fugiat ex veniam sit soluta iste, reprehenderit laboriosam!</p>
+                                                </div>
+                                            </div>
+                                            <!-- End single feature item -->
+
+                                            <!-- Start single feature item -->
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <button class="btn mu-feature-btn" type="button">
+                                                        <i class="fa fa-sliders" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h3 class="media-heading">Easy To Customize</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis provident in voluptatum nihil suscipit molestias, excepturi blanditiis corrupti error tenetur ab, voluptates architecto nemo.</p>
+                                                </div>
+                                            </div>
+                                            <!-- End single feature item -->
+
+                                            <!-- Start single feature item -->
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <button class="btn mu-feature-btn" type="button">
+                                                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h3 class="media-heading">Excellent Performance</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta veniam eius, ullam nisi repellendus deserunt distinctio, eveniet libero velit quo voluptatem sequi, ipsa asperiores ad? Facilis molestiae cum aliquam.</p>
+                                                </div>
+                                            </div>
+                                            <!-- End single feature item -->
+
+                                            <!-- Start single feature item -->
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <button class="btn mu-feature-btn" type="button">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h3 class="media-heading">GPS Tracking</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque repudiandae eveniet facere natus recusandae, sapiente iste veritatis molestiae. Recusandae veniam officia asperiores reprehenderit earum.</p>
+                                                </div>
+                                            </div>
+                                            <!-- End single feature item -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Feature Content -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Feature -->
+
+        <!-- Start Video -->
+        <section id="mu-video">
+            <div class="mu-video-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mu-video-area">
+                                <h2>Watch Promo Video</h2>
+                                <a class="mu-video-play-btn" href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Video content -->
+            <div class="mu-video-content">
+                <div class="mu-video-iframe-area">
+                    <a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <iframe class="mu-video-iframe" width="854" height="480" src="https://www.youtube.com/embed/9r40_ffCZ_I" frameborder="0" allowfullscreen></iframe> 
+                </div>
+            </div>
+            <!-- End Video content -->
+
+        </section>
+        <!-- End Video -->
+
+        <!-- Start Apps Screenshot -->
+        <section id="mu-apps-screenshot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-apps-screenshot-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">APPS SCREENSHOT</h2>
+                                <span class="mu-title-dot"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p>
+                            </div>
+
+
+                            <!-- Start Apps Screenshot Content -->
+                            <div class="mu-apps-screenshot-content">
+
+                                <div class="mu-apps-screenshot-slider">
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/01.jpg" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/02.jpg" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/03.jpg" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/04.jpg" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/05.jpg" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/01.jpg" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/02.jpg" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/03.jpg" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/04.jpg" alt="App screenshot img">
+                                    </div>
+
+                                    <div class="mu-single-screeshot">
+                                        <img src="{{url('asset-user')}}/images/screenshot/05.jpg" alt="App screenshot img">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- End Apps Screenshot Content -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Apps Screenshot -->
+
+        <!-- Start Download -->
+        <section id="mu-download">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-download-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">GET THE APP</h2>
+                                <span class="mu-title-dot"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p>
+                            </div>
+
+
+                            <div class="mu-download-content">
+                                <a class="mu-apple-btn" href="#"><i class="fa fa-apple"></i><span>apple store</span></a>
+                                <a class="mu-google-btn" href="#"><i class="fa fa-android"></i><span>google play</span></a>
+                                <a class="mu-windows-btn" href="#"><i class="fa fa-windows"></i><span>windows store</span></a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Download -->
+
+        <!-- Start FAQ -->
+        <section id="mu-faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-faq-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">FAQ</h2>
+                                <span class="mu-title-dot"></span>
+                            </div>
+
+
+                            <div class="mu-faq-content">
+
+                                <div class="panel-group" id="accordion">
+
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                            <span class="fa fa-minus"></span> What is Apex App? 
+                                          </a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapseOne" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                            <span class="fa fa-plus"></span> How do I setup this App? 
+                                          </a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapseTwo" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                            <span class="fa fa-plus"></span> Does it cost anything to become a member? 
+                                          </a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                            <span class="fa fa-plus"></span> What is your policy regarding privacy? 
+                                          </a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapseFour" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                            <span class="fa fa-plus"></span> Are there more help resources available? 
+                                          </a>
+                                        </h4>
+                                      </div>
+                                      <div id="collapseFive" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End FAQ -->
+
+
+        <!-- Start Contact -->
+        <section id="mu-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-contact-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-heading-title">GET IN TOUCH</h2>
+                                <span class="mu-title-dot"></span>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                            </div>
+
+                            
+
+                            <!-- Start Contact Content -->
+                            <div class="mu-contact-content">
+                                <div class="row">
+
+                                <div class="col-md-7">
+                                    <div class="mu-contact-left">
+                                        <div id="form-messages"></div>
+                                            <form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
+                                                <div class="form-group">                
+                                                    <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                                                </div>
+                                                <div class="form-group">                
+                                                    <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+                                                </div>              
+                                                <div class="form-group">
+                                                    <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+                                                </div>
+                                                <button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div class="mu-contact-right">
+                                            <div class="mu-contact-right-single">
+                                                <div class="mu-icon"><i class="fa fa-map-marker"></i></div>
+                                                <p><strong>Office Location</strong></p>
+                                                <p>Dooley Branch Rd Millen, GA 30442, USA</p>
+                                            </div>
+
+                                            <div class="mu-contact-right-single">
+                                                <div class="mu-icon"><i class="fa fa-phone"></i></div>
+                                                <p><strong>Phone Number</strong></p>
+                                                <p>+90 987 678 9834</p>
+                                                <p>+90 567 098 785</p>
+                                            </div>
+
+                                            <div class="mu-contact-right-single">
+                                                <div class="mu-icon"><i class="fa fa-envelope"></i></div>
+                                                <p><strong>Email Address</strong></p>
+                                                <p>contact@domain.com</p>
+                                                <p>support@domain.com</p>
+                                            </div>
+
+                                            <div class="mu-contact-right-single">
+                                                <div class="mu-social-media">
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>      
+
+                                </div>
+                            </div>
+                            <!-- End Contact Content -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact -->
+
+    </main>
+    
+    <!-- End main content -->   
+            
+            
+    <!-- Start footer -->
+    <footer id="mu-footer" role="contentinfo">
+            <div class="container">
+                <div class="mu-footer-area">
+                    <p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://furgetech.com">Furgetech Theme</a>. All right reserved.</p>
+                </div>
+            </div>
+
+    </footer>
+    <!-- End footer -->
+
+    
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="{{url('asset-user')}}/js/bootstrap.min.js"></script>
+    <!-- Slick slider -->
+    <script type="text/javascript" src="{{url('asset-user')}}/js/slick.min.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="{{url('asset-user')}}/js/app.js"></script>
+  
+    
+    
+    <!-- Custom js -->
+    <script type="text/javascript" src="{{url('asset-user')}}/js/custom.js"></script>
+
+    
+    
+    
+  </body>
 </html>
