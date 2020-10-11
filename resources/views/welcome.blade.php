@@ -90,7 +90,7 @@
             <a class="mu-menu-close-btn" href="#"><span class="mu-line"></span></a>
             <nav class="mu-menu" role="navigation">
                 <ul>
-                    <li><a href="#mu-header">Header</a></li>
+                    <li><a href="#mu-header">Home</a></li>
                     <li><a href="#mu-feature">App Feature</a></li>
                     <li><a href="#mu-video">Promo Video</a></li>
                     <li><a href="#mu-apps-screenshot">Apps Screenshot</a></li>
