@@ -75,7 +75,7 @@ class AuthController extends Controller
         ], 422);
 
         $user = new User();
-        $verifikasiToken = Str::random(3).$user->id ;
+        $verifikasiToken = Str::random(4);
         switch ($request->level) {
             case Level::$NAME_LEVEL_EO:
                 $idLevel = Level::$ID_LEVEL_EO;
