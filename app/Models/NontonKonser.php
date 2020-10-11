@@ -13,6 +13,7 @@ class NontonKonser extends Model
         'id_penonton',
         'id_tiket_dibeli',
         'id_konser_eo',
+        'status_nonton',
     ];
     public function penonton(){
         return $this->belongsTo(Penonton::class, 'id_penonton') ;

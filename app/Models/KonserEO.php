@@ -14,9 +14,10 @@ class KonserEO extends Model
         'jum_tiket',
         'foto',
         'judul',
-        'waktu',
+        'waktu_mulai',
+        'waktu_selesai',
         'desk',
-        'link_leve_konser',
+        'link_live_konser',
     ];
 
      public function eo(){

@@ -75,7 +75,7 @@ class AuthController extends Controller
         ], 422);
 
         $user = new User();
-        $verifikasiToken = Str::random(10) ;
+        $verifikasiToken = Str::random(4);
         switch ($request->level) {
             case Level::$NAME_LEVEL_EO:
                 $idLevel = Level::$ID_LEVEL_EO;
@@ -154,7 +154,7 @@ class AuthController extends Controller
             'errCode' => -2,
             'err' => ['tidak data nomor yang sesuai']
         ], 404);
-        $verifikasiToken = Str::random(10);
+        $verifikasiToken = Str::random(3).$user->id;
         $user->update([
             'verifikasi_token' => $verifikasiToken,
         ]);

@@ -22,7 +22,7 @@ class CreateKonserEoTable extends Migration
             $table->datetime('waktu_mulai')->nullable();
             $table->datetime('waktu_selesai')->nullable();
             $table->text('desk')->nullable();
-            $table->text('link_leve_konser')->nullable();
+            $table->text('link_live_konser')->nullable();
             $table->timestamps();
 
             $table->foreign('id_eo')->references('id')->on('eo')->onDelete('cascade');
