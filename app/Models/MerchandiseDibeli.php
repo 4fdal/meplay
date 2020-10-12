@@ -33,4 +33,22 @@ class MerchandiseDibeli extends Model
     {
         return $this->belongsTo(Penonton::class, 'id_penonton');
     }
+    public static function totalMerc($idPenonton, $idKonserEo){
+        $merc = MerchandiseDibeli::where('id_penonton', $idPenonton)->get();
+        foreach ($merc as $key => $value) {
+            $value->konserMerchandise ;
+        }
+        $merc = collect($merc->toArray());
+        $merc = $merc->where('konser_merchandise.id_konser_eo', $idKonserEo);
+
+        $dataMerc = $merc->map(function($item, $index){
+            return (Object) [
+                'nama' => $item['konser_merchandise']['nama'],
+                'jumlah' => $item['jum'],
+                'total_harga' => $item['total_harga'],
+            ];
+        });
+
+        return $dataMerc ;
+    }
 }

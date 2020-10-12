@@ -21,4 +21,7 @@ class Tiket extends Model
     public function konserEO(){
         return $this->belongsTo(KonserEO::class, 'id_konser_eo') ;
     }
+    public function tiketDibeli(){
+        return $this->belongsTo(TiketDibeli::class, 'id_tiket');
+    }
 }

@@ -181,16 +181,27 @@ class KonserEOController extends Controller
         ], 404);
         $user = Auth::user();
         $penonton = $user->penonton ;
+        $alamat = $penonton->alamat ;
+        $idPenonton = $penonton->id ;
 
-        $wMulai = explode(' ', $konserEO->waktu_mulai) ;
-        $wSelesai = explode(' ', $konserEO->waktu_selesai) ;
-
-        $waktu = $wMulai[1] . ' - ' . $wSelesai[1];
-        $tanggal = $wMulai[0] . ' - ' . $wSelesai[0];
+        $waktu = $konserEO->waktu();
+        $detailPembayaran = $konserEO->detailPembelian($idPenonton);
         
         $data = [
             'judul' => $konserEO->judul,
+            'waktu' => $waktu->time,
+            'tanggal' => $waktu->tanggal,
+            'foto' => $konserEO->foto,
+            'alamat' => $alamat,
+            'detailPembelian' => $detailPembayaran->detailPembelian,
+            'jumlah_pembelian' => $detailPembayaran->jumlah,
+            'total_harga_pembelian' => $detailPembayaran->totalHarga,
         ];
+
+        return response([
+            'data' => $data,
+        ]);
+
     }
     
     public function pembayaran(Request $request){

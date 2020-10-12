@@ -447,18 +447,27 @@ class DummyData extends Seeder
                         'jum_tiket' => $valKonser->jum_tiket,
                         'foto' => $fotoKonser[rand(0, 3)],
                         'judul' => 'konser' . $value->email . ' ' . $valKonser->judul,
-                        'waktu_mulai' => date('Y-m-d', strtotime($valKonser->waktu)),
-                        'waktu_selesai' => date('Y-m-d', strtotime($valKonser->waktu) + 500000),
+                        'waktu_mulai' => date('Y-m-d H:i:s', strtotime($valKonser->waktu) + rand(100000, 200000)),
+                        'waktu_selesai' => date('Y-m-d H:i:s', strtotime($valKonser->waktu) + rand(100000, 500000)),
                         'desk' => 'des' . $value->email . ' ' . $valKonser->desk,
                         'link_live_konser' => 'des' . $value->email . ' ' . $valKonser->desk,
                     ]);
                     $tiket = Tiket::create([
                         'id_konser_eo' => $konserEO->id,
-                        'nama' => 'tiket konser' . $value->email . ' ' . $valKonser->judul,
+                        'nama' => 'tiket konser ' . $value->email . ' ' . $valKonser->judul,
                         'jumlah_tiket' => rand(10, 40),
                         'exp_waktu_pembelian' => '2020-10-15 10:00',
                         'harga' => rand(100000, 200000),
                         'harga_replay' => 10000,
+                        'desk' => 'deskripsi '.$valKonser->desk,
+                    ]);
+                    $tiket = Tiket::create([
+                        'id_konser_eo' => $konserEO->id,
+                        'nama' => 'tiket 2 konser ' . $value->email . ' ' . $valKonser->judul,
+                        'jumlah_tiket' => rand(10, 40),
+                        'exp_waktu_pembelian' => '2020-10-15 10:00',
+                        'harga' => rand(100000, 200000),
+                        'harga_replay' => 20000,
                         'desk' => 'deskripsi '.$valKonser->desk,
                     ]);
                     foreach (json_decode('[
