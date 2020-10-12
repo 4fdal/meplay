@@ -34,6 +34,7 @@ Route::group(['prefix' => 'v1'], function () {
 
             Route::get('/info_pembayaran/{idkonser}', [KonserEOController::class, 'infoPembayaran']);
             Route::post('/pembayaran', [KonserEOController::class, 'pembayaran']);
+            Route::post('/konfirmasi_pembayaran', [KonserEOController::class, 'konfirmasiPemabayran']);
         });
     });
 });

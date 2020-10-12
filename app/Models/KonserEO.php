@@ -58,6 +58,7 @@ class KonserEO extends Model
             'detailPembelian' => $detailPembelian,
         ];
     }
+    
     public function waktu(){
         $wMulai = explode(' ', $this->waktu_mulai);
         $wSelesai = explode(' ', $this->waktu_selesai);

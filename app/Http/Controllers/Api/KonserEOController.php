@@ -205,7 +205,90 @@ class KonserEOController extends Controller
     }
     
     public function pembayaran(Request $request){
+        $valid = Validator::make($request->all(), [
+            'gunakan_fitur_replay' => ['required', 'boolean'],
+            'mode_pembayaran' => ['required', 'integer'],
+            'id_konser_eo' => ['required', 'numeric']
+        ]);
+        if ($valid->fails()) return response([
+            'errMsg' => -1,
+            'err' => $valid->errors(),
+        ], 422);
 
+        $user = Auth::user();
+        $penonton = $user->penonton;
+        $idPenonton = $penonton->id;
+        $idKonserEO = $request->id_konser_eo ;
+        $gunakanReplay = $request->gunakan_fitur_replay;
+
+        $konserEO = KonserEO::find($idKonserEO);
+
+        // tiket
+        $tiketDibeli = TiketDibeli::penontonKonserEO($idPenonton, $idKonserEO)->get();
+        if(!isset($tiketDibeli)) return response([
+            'errCode' => -2,
+            'err' => 'data tidak ada',
+        ], 404);
+        foreach ($tiketDibeli as $key => $value) {
+            $beliTiket = TiketDibeli::find($value->id);
+            $beliTiket->update([
+                'jum_replay' => $gunakanReplay,
+                'exp_waktu_replay' => date('Y-m-d H:i:s', strtotime($konserEO->waktu_selesai . ' +1 day')),
+            ]);
+        }
+
+        // merc
+
+
+        
+        $detailPembelian = $konserEO->detailPembelian($idPenonton);
+        $dataBeliTiket = [
+            'total_tagihan' => $detailPembelian->totalHarga,
+            'nomor_rekening' => rand(100000000, 200000000)
+        ];
+        $dataBeliTiket['nama'] = $konserEO->nama;
+        $waktu = $konserEO->waktu();
+        $dataBeliTiket['waktu'] = $waktu->time;
+        $dataBeliTiket['tanggal'] = $waktu->tanggal;
+        
+        return response([
+            'data' => $dataBeliTiket,
+        ]);
+    }
+
+    public function konfirmasiPemabayran(Request $request){
+        $valid = Validator::make($request->all(), [
+            'id_konser_eo' => ['required', 'numeric']
+        ]);
+        if ($valid->fails()) return response([
+            'errMsg' => -1,
+            'err' => $valid->errors(),
+        ], 422);
+
+        $user = Auth::user();
+        $penonton = $user->penonton;
+        $idPenonton = $penonton->id;
+        $idKonserEO = $request->id_konser_eo;
+
+        $tiketDibeli = TiketDibeli::penontonKonserEO($idPenonton, $idKonserEO)->get();
+        if (!isset($tiketDibeli)) return response([
+            'errCode' => -2,
+            'err' => 'data tidak ada',
+        ], 404);
+
+        // tiket update
+        $tiketDibeli->update([
+            'status_dibeli' => TiketDibeli::$DIBELI_STAT_SEDANG_VERIFIKASI,
+        ]);
+
+        // merc update
+
+        return response([
+            'msg' => [
+                'berhasil memelaukan pembayaran',
+                'silahkan tungga 24jam ketepan pembayaran anda akan di verifikasi'
+            ],
+        ]);
     }
 
 }

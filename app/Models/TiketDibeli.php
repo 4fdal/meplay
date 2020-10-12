@@ -33,21 +33,13 @@ class TiketDibeli extends Model
     public function konserEO(){
         return $this->belongsTo(KonserEO::class, 'id_konser_eo') ;
     }
+    public static function penontonKonserEO($idPenonton, $idKonserEO){
+        return TiketDibeli::where('tiket_dibeli.id_penonton', $idPenonton)->where('tiket_dibeli.id_konser_eo', $idKonserEO) ;
+    }
     public static function totalTiket($idPenonton, $idKonserEO){
-        // $tiket = TiketDibeli::select(
-        //     'tiket.nama',
-        //     // 'count(tiket_dibeli.id_tiket) as jumlah',
-        //     '(sum(tiket.harga) + (tiket_dibeli.jum_replay * tiket.harga_replay)) as total_harga'
-        // )
-        // ->join('tiket', 'tiket.id', '=', 'tiket_dibeli.id_tiket')
-        // ->where('tiket_dibeli.id_penonton', $idPenonton)
-        // ->where('tiket_dibeli.id_konser_eo', $idKonserEO)
-        // ->groupBy('tiket_dibeli.id_tiket')
-        // ->get();
-
         $tiket = collect(TiketDibeli::join('tiket', 'tiket.id', '=', 'tiket_dibeli.id_tiket')
-            ->select('tiket_dibeli.*', 'tiket.nama', 'tiket.harga')
-            ->where('tiket_dibeli.id_penonton', 4)
+            ->select('tiket_dibeli.*', 'tiket.nama', 'tiket.harga', 'tiket.harga_replay')
+            ->where('tiket_dibeli.id_penonton', $idPenonton)
             ->where('tiket_dibeli.id_konser_eo', $idKonserEO)
             ->get()->toArray());
         
@@ -55,13 +47,24 @@ class TiketDibeli extends Model
         
         $dataTiket = $groupTiket[1]->map(function($item, $index) use ($tiket){
             $collect = $tiket->where('id_tiket', $item['id_tiket']) ;
+            $totalHarga = 0 ;
+            foreach ($tiket as $key => $value) {
+                if($value['id_tiket'] == $item['id_tiket']){
+                    $totalHarga += ($value['jum_replay'] * $value['harga_replay']) + $value['harga'] ;
+                }
+            }
             return (Object) [
                 'nama' => $item['nama'], 
                 'jumlah' => $collect->count(),
-                'total_harga' => $collect->sum('harga')
+                'total_harga' => $totalHarga ,
             ];
         });
 
         return $dataTiket ;
+    }
+
+    public function totalPembayaran(){
+        $tiket = $this->tiket ;
+        return ($this->jum_replay * $tiket->harga_replay) + $tiket->harga ;
     }
 }

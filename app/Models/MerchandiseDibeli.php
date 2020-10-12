@@ -51,4 +51,14 @@ class MerchandiseDibeli extends Model
 
         return $dataMerc ;
     }
+
+    public function penontonMerc($idPenonton, $idKonserEo){
+        $merc = MerchandiseDibeli::join('konser_merchandise', 'konser_merchandise.id', '=', 'merchandise_dibeli.id_konser_marchandise')
+        ->select('konser_merchandise.nama', 'merchandise_dibeli.*')
+        ->where('merchandise_dibeli.id_penonton', $idPenonton)
+        ->where('konser_merchandise.id_konser', $idKonserEo)
+        ->get();
+
+        return $merc ;
+    }
 }

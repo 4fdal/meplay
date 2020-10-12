@@ -71,5 +71,6 @@ class HomePageController extends Controller
                 'artis' => $artis,
             ]
         ]);
+        
     }
 }
